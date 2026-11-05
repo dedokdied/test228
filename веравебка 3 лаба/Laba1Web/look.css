@@ -1,0 +1,64 @@
+body {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.card {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+h1 {
+    margin: 0 0 16px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #777;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    border: 1px solid #000;
+    background-color: #ddd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.success,
+.error {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.success {
+    background-color: #f0f0f0;
+}
+
+.error {
+    color: #b00000;
+    background-color: #fff0f0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Вход</h1>
+
+        <nav class="nav">
+            <a href="index.html">Каталог</a>
+            <a href="add.html" class="admin-only">Добавить</a>
+            <a href="buy.html">Купить</a>
+            <a href="delete.html" class="admin-only">Удалить</a>
+            <a href="login.html" class="active" id="authLink">Войти</a>
+        </nav>
+
+        <p class="hint">
+            Тестовые учётные записи: <strong>admin / admin123</strong> (роль ADMIN),
+            <strong>user / user123</strong> (роль USER).
+        </p>
+
+        <div id="message"></div>
+
+        <form id="loginForm">
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" autocomplete="username">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" autocomplete="current-password">
+
+            <button type="submit">Войти</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

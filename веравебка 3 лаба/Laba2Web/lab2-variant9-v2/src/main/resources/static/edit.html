@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать товар</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Редактировать товар</h1>
+
+        <nav class="nav">
+            <a href="index.html">Каталог</a>
+            <a href="add.html">Добавить</a>
+            <a href="buy.html">Купить</a>
+            <a href="delete.html">Удалить</a>
+        </nav>
+
+        <div id="message"></div>
+
+        <form id="editForm">
+            <label for="name">Name (название)</label>
+            <input type="text" id="name">
+
+            <label for="brand">Brand (бренд)</label>
+            <input type="text" id="brand">
+
+            <label for="price">Price (цена)</label>
+            <input type="number" id="price" min="0.01" step="0.01">
+
+            <label for="countInStock">CountInStock (количество на складе)</label>
+            <input type="number" id="countInStock" min="0" step="1">
+
+            <button type="submit">Сохранить изменения</button>
+            <a class="back-link" href="index.html">Назад к каталогу</a>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
